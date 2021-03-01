@@ -27,7 +27,7 @@ spec:
                 port:
                   number: 3000
           - path: /api/?(.*)
-            pathType: ImplementationSpecific
+#            pathType: ImplementationSpecific
             backend:
               service:
                 name: server-cluster-ip-service
@@ -44,7 +44,7 @@ spec:
                 port:
                   number: 3000
           - path: /api/?(.*)
-            pathType: ImplementationSpecific
+#            pathType: ImplementationSpecific
             backend:
               service:
                 name: server-cluster-ip-service
