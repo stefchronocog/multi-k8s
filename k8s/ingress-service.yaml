@@ -20,7 +20,7 @@ spec:
       http:
         paths:
           - path: /?(.*)
-            pathType: ImplementationSpecific
+#            pathType: ImplementationSpecific
             backend:
               service:
                 name: client-cluster-ip-service
@@ -37,7 +37,7 @@ spec:
       http:
         paths:
           - path: /?(.*)
-            pathType: ImplementationSpecific
+#            pathType: ImplementationSpecific
             backend:
               service:
                 name: client-cluster-ip-service
