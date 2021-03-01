@@ -1,6 +1,6 @@
-docker build -t stefcognizant/multi-client:latest -t stefcognizant/multi-client/$SHA -f ./client/Dockerfile ./client
-docker build -t stefcognizant/multi-server:latest -t stefcognizant/multi-server/$SHA -f ./server/Dockerfile ./server
-docker build -t stefcognizant/multi-worker:latest -t stefcognizant/multi-worker/$SHA -f ./worker/Dockerfile ./worker
+docker build -t stefcognizant/multi-client:latest -t stefcognizant/multi-client:$SHA -f ./client/Dockerfile ./client
+docker build -t stefcognizant/multi-server:latest -t stefcognizant/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t stefcognizant/multi-worker:latest -t stefcognizant/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push stefcognizant/multi-client:latest
 docker push stefcognizant/multi-server:latest
