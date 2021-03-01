@@ -1,0 +1,20 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: stefchrono-com-tls
+spec:
+  secretName: stefchrono-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: stefchrono.com
+  dnsNames:
+    - stefchrono.com
+    - www.stefchrono.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - stefchrono.com
+          - www.stefchrono.com
